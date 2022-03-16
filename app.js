@@ -20,13 +20,13 @@ for(let animal in animals){
   aria-label={animal} 
   role="button" 
   onClick={displayFact}/>)
-}
+};
 
 function displayFact(e) {
   let randomIndex = Math.floor(Math.random() * animals[e.target.alt].facts.length);
   let randomFact = animals[e.target.alt].facts[randomIndex];
   document.getElementById("fact").innerHTML = randomFact;
-}
+};
 
 const animalFacts = (
   <div>
